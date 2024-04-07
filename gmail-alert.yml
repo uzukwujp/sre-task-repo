@@ -6,12 +6,12 @@ alertmanagerFiles:
     receivers:
     - name: 'gmail-notifications'
       email_configs:
-      - to: example@gmail.com 
-        from: example@gmail.com # Update your from mail id here
+      - to: jchuks69@gmail.com 
+        from: john.p@darey.io   
         smarthost: smtp.gmail.com:587
-        auth_username: example@gmail.com # Update your from mail id here
-        auth_identity: example@gmail.com # Update your from mail id here
-        auth_password: password # Update your app-password here
+        auth_username: john.p@darey.io
+        auth_identity: john.p@darey.io
+        auth_password: '${SMTP_PASSWORD}'
         send_resolved: true
         headers:
           subject: " Prometheus -  Alert  "
